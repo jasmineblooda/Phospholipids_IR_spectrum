@@ -1,0 +1,39 @@
+; ir_spec.mdp - Parameters for IR Spectrum Calculation
+integrator   = md
+dt           = 0.001      ; 1.0 fs time step is required for high-frequency vibrations
+nsteps       = 200000     ; 200 ps is often sufficient for a good spectrum (1 fs * 200,000 steps = 200 ps)
+
+; Output control
+nstxout-compressed = 4    ; Save coordinates every 4 fs (0.001 ps * 4 = 0.004 ps)
+nstlog       = 5000       ; Log progress every 5 ps
+nstenergy    = 5000       ; Save energies every 5 ps
+
+; Bond constraints
+constraints  = none       ; MOST CRITICAL PARAMETER: Allow ALL bonds to vibrate freely
+
+; Neighbor searching and electrostatics
+cutoff-scheme   = Verlet
+ns_type         = grid
+nstlist         = 20
+rcoulomb        = 1.2
+rvdw            = 1.2
+coulombtype     = PME
+pme_order       = 4
+fourierspacing  = 0.16
+
+; Temperature and pressure coupling
+tcoupl      = V-rescale
+tc-grps     = System
+tau_t       = 0.1
+ref_t       = 310.15
+pcoupl      = Parrinello-Rahman
+pcoupltype  = isotropic
+tau_p       = 2.0
+ref_p       = 1.0
+compressibility = 4.5e-5
+
+; Other settings
+pbc                  = xyz
+DispCorr             = EnerPres
+gen_vel              = yes
+gen_temp             = 310.15

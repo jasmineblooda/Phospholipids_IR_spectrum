@@ -1,0 +1,29 @@
+# This file was created Tue Aug 26 18:39:42 2025
+# Created by:
+#                 :-) GROMACS - gmx dipoles, 2020.6-MODIFIED (-:
+# 
+# Executable:   D:\gromacs\gmx2020.6_GPU\bin\gmx.exe
+# Data prefix:  D:\gromacs\gmx2020.6_GPU
+# Working dir:  D:\Learn\Thesis\gromacsLearning\Á×Ö¬Ä£Äâ\charmm-gui-5548695784\gromacs
+# Command line:
+#   gmx dipoles -s short_IR_run.tpr -f short_IR_run.xtc -c dipcorr_2nd.xvg -corr total
+# gmx dipoles is part of G R O M A C S:
+#
+# Gyas ROwers Mature At Cryogenic Speed
+#
+@    title "Total dipole moment"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "D"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "< |M|\S2\N >"
+@ s1 legend "< |M| >\S2\N"
+@ s2 legend "< |M|\S2\N > - < |M| >\S2\N"
+@ s3 legend "< |M| >\S2\N / < |M|\S2\N >"
+         0   1.515e+05  1.515e+05  0.000e+00  1.000e+00
+       100   2.675e+05  2.350e+05  3.251e+04  8.785e-01

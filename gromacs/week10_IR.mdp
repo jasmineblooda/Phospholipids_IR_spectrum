@@ -1,0 +1,35 @@
+; --- 100ps_run.mdp ---
+; 用于100ps高频采样模拟的参数文件
+
+; --- 运行控制 ---
+integrator               = md
+dt                       = 0.002    ; 时间步长 (2 fs)
+nsteps                   = 50000    ; 总步数 (50000 * 0.002 ps = 100 ps)
+
+; --- 输出控制 ---
+nstxout-compressed       = 5        ; 每 5 步 (10 fs) 向 .xtc 文件写入一次坐标
+nstenergy                = 5        ; 每 5 步 (10 fs) 向 .edr 文件写入一次能量
+nstcalcenergy            = 1        ; 每一步都计算能量，以确保 nstenergy 能按时写入
+nstlog                   = 1000     ; 每 1000 步在日志文件中记录一次进度
+
+; --- TRR 文件输出控制 (回答您之前的问题) ---
+nstxout                  = 5        ; 每 5 步向 .trr 文件写入一次坐标 (全精度)
+nstvout                  = 5        ; 每 5 步向 .trr 文件写入一次速度
+nstfout                  = 0        ; 不写入力 (设为0以节省空间)
+
+; --- 相互作用参数 ---
+cutoff-scheme            = Verlet
+rlist                    = 1.2
+coulombtype              = PME
+rcoulomb                 = 1.2
+vdwtype                  = Cut-off
+rvdw                     = 1.2
+
+; --- 温度和约束 ---
+tcoupl                   = V-rescale ; 使用V-rescale控温器
+tc-grps                  = System    ; 对整个体系控温
+tau_t                    = 0.1
+ref_t                    = 303.15    ; 目标温度
+pcoupl                   = no        ; 不进行压力耦合 (NVT系综)
+constraints              = h-bonds   ; 约束氢键
+constraint_algorithm     = LINCS

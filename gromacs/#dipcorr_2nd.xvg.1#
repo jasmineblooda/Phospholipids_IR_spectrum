@@ -1,0 +1,19 @@
+# This file was created Tue Aug 26 18:39:42 2025
+# Created by:
+#                 :-) GROMACS - gmx dipoles, 2020.6-MODIFIED (-:
+# 
+# Executable:   D:\gromacs\gmx2020.6_GPU\bin\gmx.exe
+# Data prefix:  D:\gromacs\gmx2020.6_GPU
+# Working dir:  D:\Learn\Thesis\gromacsLearning\Á×Ö¬Ä£Äâ\charmm-gui-5548695784\gromacs
+# Command line:
+#   gmx dipoles -s short_IR_run.tpr -f short_IR_run.xtc -c dipcorr_2nd.xvg -corr total
+# gmx dipoles is part of G R O M A C S:
+#
+# Gyas ROwers Mature At Cryogenic Speed
+#
+@    title "Autocorrelation Function of Total Dipole"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "C(t)"
+@TYPE xy
+     0.000     1.00000
+&

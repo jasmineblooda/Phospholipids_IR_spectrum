@@ -1,0 +1,22 @@
+integrator               = md
+dt                       = 0.002
+nsteps                   = 10000     ; 只跑20 ps，用于快速测试
+
+nstxout-compressed       = 10        ; 每0.02ps输出一帧
+nstlog                   = 1000
+nstenergy                = 10
+
+cutoff-scheme            = Verlet
+rlist                    = 1.2
+coulombtype              = PME
+rcoulomb                 = 1.2
+vdwtype                  = Cut-off
+rvdw                     = 1.2
+
+tcoupl                   = V-rescale
+tc-grps                  = System
+tau_t                    = 0.1
+ref_t                    = 303.15
+
+constraints              = h-bonds
+constraint_algorithm     = LINCS

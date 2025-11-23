@@ -1,0 +1,43 @@
+# This file was created Mon Aug 18 14:37:58 2025
+# Created by:
+#                 :-) GROMACS - gmx energy, 2020.6-MODIFIED (-:
+# 
+# Executable:   D:\gromacs\gmx2020.6_GPU\bin\gmx.exe
+# Data prefix:  D:\gromacs\gmx2020.6_GPU
+# Working dir:  D:\Learn\Thesis\gromacsLearning\Á×Ö¬Ä£Äâ\charmm-gui-5548695784\gromacs
+# Command line:
+#   gmx energy -f step6.0_minimization.edr -o potential.xvg
+# gmx energy is part of G R O M A C S:
+#
+# Gromacs Runs One Microsecond At Cannonball Speeds
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kJ/mol)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Potential"
+    0.000000  -335608.031250
+    1.000000  -337709.812500
+    2.000000  -339911.437500
+    3.000000  -341295.718750
+    4.000000  -342594.750000
+    5.000000  -343667.656250
+    6.000000  -343867.656250
+    8.000000  -346216.531250
+   10.000000  -346476.218750
+   11.000000  -347944.656250
+   13.000000  -349200.562500
+   14.000000  -349524.625000
+   15.000000  -351154.625000
+   17.000000  -351881.187500
+   18.000000  -352344.312500
+   19.000000  -352920.656250
+   20.000000  -353122.218750
+   21.000000  -353311.812500
+   23.000000  -355228.562500

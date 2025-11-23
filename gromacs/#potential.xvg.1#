@@ -1,0 +1,43 @@
+# This file was created Mon Aug 18 14:37:16 2025
+# Created by:
+#                 :-) GROMACS - gmx energy, 2020.6-MODIFIED (-:
+# 
+# Executable:   D:\gromacs\gmx2020.6_GPU\bin\gmx.exe
+# Data prefix:  D:\gromacs\gmx2020.6_GPU
+# Working dir:  D:\Learn\Thesis\gromacsLearning\Á×Ö¬Ä£Äâ\charmm-gui-5548695784\gromacs
+# Command line:
+#   gmx energy -f step6.0_minimization.edr -o potential.xvg
+# gmx energy is part of G R O M A C S:
+#
+# Giant Rising Ordinary Mutants for A Clerical Setup
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kJ/mol)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Position Rest."
+    0.000000    0.000000
+    1.000000    0.046897
+    2.000000    0.048591
+    3.000000    0.085404
+    4.000000    0.084393
+    5.000000    0.133444
+    6.000000    0.148603
+    8.000000    0.149473
+   10.000000    0.191724
+   11.000000    0.206928
+   13.000000    0.212282
+   14.000000    0.274227
+   15.000000    0.290061
+   17.000000    0.312831
+   18.000000    0.353958
+   19.000000    0.379423
+   20.000000    0.423273
+   21.000000    0.449485
+   23.000000    0.471485

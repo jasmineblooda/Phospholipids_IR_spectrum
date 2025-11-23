@@ -1,0 +1,21 @@
+Covariance analysis log, written Tue Oct 14 17:57:08 2025
+
+Program: covar
+Working directory: D:\Learn\Thesis\gromacsLearning\Phospholipids_Simulation\charmm-gui-5548695784\gromacs
+
+Read 10001 frames from week10_IR.trr (time 0 to 100 ps)
+Read reference structure for fit from week10_IR.tpr
+Read index groups from week10_IR_multi.ndx
+
+Analysis group is 'POPC_single' (134 atoms)
+Fit group is 'POPC_single' (134 atoms)
+Analysis is non-mass weighted
+Fit is non-mass weighted
+Diagonalized the 402x402 covariance matrix
+Trace of the covariance matrix before diagonalizing: 2.28642
+Trace of the covariance matrix after diagonalizing: 2.28642
+
+Wrote 402 eigenvalues to week11_eigenvalues.xvg
+Wrote reference structure to week11_eigenvectors.trr
+Wrote average structure to average.pdb and week11_eigenvectors.trr
+Wrote eigenvectors 1 to 402 to week11_eigenvectors.trr

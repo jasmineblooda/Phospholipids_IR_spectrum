@@ -1,0 +1,10 @@
+step7_1.xtc
+step7_10.xtc
+step7_2.xtc
+step7_3.xtc
+step7_4.xtc
+step7_5.xtc
+step7_6.xtc
+step7_7.xtc
+step7_8.xtc
+step7_9.xtc

@@ -1,0 +1,23 @@
+; nma.mdp - 指示mdrun计算Hessian矩阵 (已修正)
+; 运行控制参数
+integrator   = nm         ; "Normal Modes"积分器，激活Hessian计算模式
+tinit        = 0
+dt           = 0.001
+nsteps       = 0          ; 单点计算，步数为0
+
+; --- 修改部分开始 ---
+continuation = yes        ; 新增：根据grompp建议，用于单点计算，确保输入坐标不被修改
+nstlist      = 10         ; 修改：从0改为10，以满足Verlet方案对邻近列表构建的要求
+; --- 修改部分结束 ---
+
+; 邻近搜索和相互作用参数
+; 这些参数必须与能量最小化步骤中使用的完全一致
+cutoff-scheme = Verlet
+rlist        = 1.2
+coulombtype  = PME
+rcoulomb     = 1.2
+vdwtype      = Cut-off
+rvdw         = 1.2
+
+; 约束
+constraints  = none       ; 保持无约束
